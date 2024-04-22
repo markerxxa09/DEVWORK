@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial</title>
+  <link rel="stylesheet" href="index3.css">
+</head>
+
+<!-- Estructura inicial jajaja  -->
+<body>
+    <!-- La barra o menu como lo conoscan -->
+    <div class="nav">
+        <div class="logo">
+            <h2><a href="#inicio" class="logo-link"></a></h2>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Seguridad</a></li>
+                <li><a href="#acerca">Funciòn</a></li>
+                <li><a href="#contacto">Capacidad</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!-- Las mini estructuras ajjaja ;v -->
+    <div id="inicio" class="inicio">
+        <div class="imgin">
+            <img src="5z.png">
+            <p>
+                <span class="estilo1">A TU ALCANCE</span><br>
+                <span class="estilo2">PROYECTO<br>TECNOLOGICO</br></span><br>
+                <span class="estilo3">Explorando el codigo de la mente: IA para todos</span>
+                <br><br><br><a href="index3-5.html"><button class="button"><span>   DESCUBRELO   </span><span></span></button></a></br></br></br>
+            </p>          
+                      
+        </div>
+    </div>
+
+    <div id="servicios" class="servicios">
+        <div class="imgserv">
+          <img src="7x.png">
+            <p>
+                <span class="estiloserv">IA<br>Seguridad</br></span><br>
+                <span class="estiloserv2">Proporciona herramientas y técnicas avanzadas para proteger sistemas y datos contra amenazas cibernéticas, permitiendo a las organizaciones detectar, prevenir y responder de manera más eficaz a los ataques. Sin embargo, también plantea desafíos en términos de privacidad, ética y la necesidad de supervisión humana para garantizar su efectividad y mitigar posibles riesgos.
+                    <br><br>Detección de amenazas</br><br>Análisis de comportamiento</br><br>Automatización de respuestas</br>
+                    <br>Predicción de riesgos</br><br>Mejora de la seguridad de los dispositivos IoT</br>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div id="acerca" class="acerca">
+        <div class="imgac">
+            <img src="7x.png">
+              <p>
+                  <span class="estiloac">Capacidad<br>Cognitiva</br></span><br>
+                  <span class="estiloac2"> IA débil o estrecha: Se enfoca en realizar tareas específicas y limitadas. No tiene capacidad de aprendizaje generalizado y no posee conciencia ni autoconciencia.
+                    <br>IA fuerte o general:* Tiene la capacidad de realizar tareas de manera similar a los humanos, incluyendo la capacidad de aprender y razonar en múltiples dominios.</br> 
+                  </span>
+              </p>
+          </div>
+    </div>
+
+    <div id="contacto" class="contacto">
+        <div class="imgoc">
+            <img src="7x.png">
+              <p>
+                  <span class="estiloco">Funcionalidad</span><br>
+                  <span class="estiloco2"><br>IA reactiva: Opera en un conjunto predefinido de reglas y no tiene capacidad de aprendizaje. Responde de manera específica a entradas.</br>
+                    <br>IA basada en la memoria: Tiene la capacidad de aprender de experiencias pasadas y de adaptarse en consecuencia.</br>
+                    <br>IA teórica: Tiene la capacidad de entender el contexto y tomar decisiones basadas en la lógica y el razonamiento abstracto.</br>
+                  </span>
+              </p>
+          </div>
+    </div>
+
+<!-- JS para animaciones y funciones a y para que no se vallan a otro lado lo de la barra -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+<!-- La cola jajajaja el fin se acerca ;) -->
+<footer>  
+    <audio autoplay id="audio" src="Sn2.mp3"></audio>
+    <ul class="wave-menu" onclick="toggleMusic()">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- el de musica funcion -->
+    <script>
+        function toggleMusic() {
+      var audio = document.getElementById("audio");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+    
+    </script>
+    <!-- El fin ajjaaj -->
+    <center>
+        <h5>Angel lo hizo todo sisisisisis</h5>
+    </center>
+</footer>
+<!-- Fin -->
+</html>

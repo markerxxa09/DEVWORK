@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial</title>
+  <link rel="stylesheet" href="index4.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<!-- Estructura inicial jajaja  -->
+<body>
+    <script>
+        AOS.init();
+      </script>
+      <div data-aos="fade-up" data-aos-duration="1000">
+<!-- Las mini estructuras ajjaja ;v -->
+<video loop muted autoplay poster="XIA.mp4" class="background-videoIn">
+    <source src="XIA.mp4" type="video/mp4">
+    <source src="XIA.mp4" type="video/webm">
+    <source src="XIA.mp4" type="video/ogv">
+</video>
+    <div id="inicio" class="inicio">
+        <div class="container">
+
+            <p>
+                <span class="estilo1">A TU ALCANCE</span><br>
+                <span class="estilo2">PROYECTO<br>TECNOLOGICO</br></span><br>
+                <span class="estilo3">Explorando el codigo de la mente: IA para todos</span>
+            </p>          
+                      
+        </div>
+    </div>
+
+    <div id="servicios" class="servicios">
+        <div class="imgserv">
+          <img src="7x.png">
+            <p>
+                <span class="estilo2">Enfoque<br>Tecnico</br></span><br>
+                <span class="estilo3"> 
+                    <br>IA simbólica:* Se basa en el procesamiento de símbolos y reglas lógicas para realizar tareas.</br>
+                    <br>IA conexionista o basada en redes neuronales:* Utiliza modelos inspirados en la estructura y funcionamiento del cerebro humano, como redes neuronales artificiales, para aprender de datos y realizar tareas.</br>
+                    <br>IA evolutiva:* Se inspira en la evolución biológica para desarrollar algoritmos que mejoren automáticamente su desempeño con el tiempo.</br>
+                </span>
+            </p>
+        </div>
+    </div>        
+    <video loop muted autoplay poster="VA.mp4" class="background-video">
+        <source src="VA.mp4" type="video/mp4">
+        <source src="VA.mp4" type="video/webm">
+        <source src="VA.mp4" type="video/ogv">
+    </video>
+    <div id="acerca" class="acerca">
+              <p>
+                  <span class="estilo2">Enfoque<br>Aplicado</br></span><br>
+                  <span class="estilo3">                    
+                    <br>IA aplicada: Se enfoca en resolver problemas específicos en campos como la salud, finanzas, transporte, etc.</br>
+                    <br>IA generalizada: Busca desarrollar sistemas que puedan realizar una amplia gama de tareas de manera autónoma.</br>
+                  </span>
+              </p>
+          </div>
+    </div>
+    <div id="contacto" class="contacto">
+        <div class="imgoc">
+            <img src="7x.png">
+              <p>
+                  <span class="estilo2">IA<br>General</br></span><br>
+                  <span class="estilo">                    
+                    <br>Este tipo de IA se refiere a la capacidad de una máquina para realizar cualquier tarea intelectual que un humano pueda hacer.</br>
+                    <br>La IA fuerte tendría conciencia de sí misma, emociones y la capacidad de resolver problemas en una variedad de dominios.</br>
+                    <br>Aún no se ha logrado desarrollar una IA fuerte, y su creación plantea desafíos éticos y filosóficos significativos.</br>
+                  </span>
+                  <div class="card">
+                    <div class="card2">
+                        <span class="estilocard">Rule-Based AI<br> conjunto de reglas definidas por humanos para realizar tareas específicas</br></span><br>
+                    </div>
+                  </div>
+              </p>
+          </div>
+    </div>
+
+<!-- JS para animaciones y funciones a y para que no se vallan a otro lado lo de la barra -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+<!-- La cola jajajaja el fin se acerca ;) -->
+<footer>  
+    <audio autoplay id="audio" src="Sn1.mp3"></audio>
+    <ul class="wave-menu" onclick="toggleMusic()">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- el de musica funcion -->
+    <script>
+        function toggleMusic() {
+      var audio = document.getElementById("audio");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+    
+    </script>
+    <!-- El fin ajjaaj -->
+    <center>
+        <h5>Angel lo hizo todo sisisisisis</h5>
+    </center>
+    <button><a href="index3.html">
+        Regresar</a>
+        <div class="arrow-wrapper">
+            <div class="arrow"></div>
+    
+        </div>
+    </button>
+</footer>
+</div>
+<!-- Fin -->
+</html>
